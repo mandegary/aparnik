@@ -2,13 +2,10 @@ import React, {useContext, useState} from "react";
 import "./home.css"
 import "video.js/dist/video-js.css"
 import {Col, Container, Row} from "react-bootstrap";
-import videojs from 'video.js'
 import VideoPlayer from "../video/video"
 import Hls from "../video/hls"
 
 const HomePage = (props) => {
-    const [showAddress, setShowAddress] = React.useState(false);
-    const [show, setShow] = React.useState(false);
 
     const videoJsOptions1 = {
         autoplay: false,

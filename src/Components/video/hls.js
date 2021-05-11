@@ -41,7 +41,8 @@ export default class VideoPlayer extends Component {
                    preload="auto"
                    width="500"
                    poster={ this.props.poster }
-                   autoPlay={true}
+                   autoPlay={false}
+                   controls= {true}
                    ref={ r => { this.videoNode = r; } } >
 
                 <source src={this.props.src}
